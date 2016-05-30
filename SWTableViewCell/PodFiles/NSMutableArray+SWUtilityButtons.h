@@ -14,6 +14,7 @@
 - (void)sw_addUtilityButtonWithColor:(UIColor *)color attributedTitle:(NSAttributedString *)title;
 - (void)sw_addUtilityButtonWithColor:(UIColor *)color icon:(UIImage *)icon;
 - (void)sw_addUtilityButtonWithColor:(UIColor *)color normalIcon:(UIImage *)normalIcon selectedIcon:(UIImage *)selectedIcon;
+- (void)sw_addUtilityButtonWithView:(UIView *)view;
 
 @end
 

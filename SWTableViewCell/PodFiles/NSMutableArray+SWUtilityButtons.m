@@ -46,6 +46,18 @@
     [self addObject:button];
 }
 
+- (void)sw_addUtilityButtonWithCustomView:(UIView *)customView {
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button addSubview:customView];
+    
+    customView.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    [NSLayoutConstraint constraintWithItem:customView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:button attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0].active = YES;
+    [NSLayoutConstraint constraintWithItem:customView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:button attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0.0].active = YES;
+    
+    [self addObject:button];
+}
+
 @end
 
 
